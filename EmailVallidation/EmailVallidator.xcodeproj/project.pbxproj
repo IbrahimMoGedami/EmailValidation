@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		25EE3F462A0BB788007AB355 /* EmailVallidator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25EE3F3D2A0BB788007AB355 /* EmailVallidator.framework */; };
 		25EE3F4B2A0BB788007AB355 /* EmailVallidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25EE3F4A2A0BB788007AB355 /* EmailVallidatorTests.swift */; };
 		25EE3F4C2A0BB788007AB355 /* EmailVallidator.h in Headers */ = {isa = PBXBuildFile; fileRef = 25EE3F402A0BB788007AB355 /* EmailVallidator.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		25EE3F562A0BB79B007AB355 /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25EE3F552A0BB79B007AB355 /* Validator.swift */; };
@@ -22,6 +21,19 @@
 			remoteInfo = EmailVallidator;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		254D89A02A0C45E100C10BEB /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		25EE3F3D2A0BB788007AB355 /* EmailVallidator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EmailVallidator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,7 +56,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				25EE3F462A0BB788007AB355 /* EmailVallidator.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -117,6 +128,7 @@
 				25EE3F392A0BB788007AB355 /* Sources */,
 				25EE3F3A2A0BB788007AB355 /* Frameworks */,
 				25EE3F3B2A0BB788007AB355 /* Resources */,
+				254D89A02A0C45E100C10BEB /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -279,6 +291,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -336,6 +349,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
